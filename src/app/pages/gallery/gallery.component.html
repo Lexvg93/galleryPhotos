@@ -1,7 +1,9 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4">
-            <app-photo [photo]=photoTest/>
-        </div>
+        @for (item of photoList; track $index) {
+            <div class="col-sm-4">
+                <app-photo [photo]=item/>
+            </div>
+        }
     </div>
 </div>
