@@ -1,5 +1,13 @@
 <app-nav/>
-<app-header/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 bgimg"></div>
+        <div class="col-sm" style="height: 1130px;">
+            <app-header/>
+            <router-outlet />
+        </div>
+    </div>
+</div>
 <app-footer/>
 
-<router-outlet />
+
